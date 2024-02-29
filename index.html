@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Job Examples{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+    .important {
+        color: #202f3ecf;
+    }
+</style>
+{% endblock %}
+{% block content %}
+
+<div class="">
+    <h1>Welcome to Index.html</h1>
+    <p class="important">
+        My awesome homepage.
+    </p>
+</div>
+
+<div class="card text-bg-light p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+    <h5 class="card-title">This website is styled with Bootstrap</h5>
+      <p class="card-text">I use this awsome library to create beutiful websites.</p>
+      <p class="card-text"><small>The date today is {{ date }}</small></p>
+
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+{% endblock %} 
